@@ -1,6 +1,6 @@
 import styles from "./input.module.css";
 
-const Input = () => {
+const Input = (props) => {
   return <input className={styles.input} {...props} />;
 };
 
