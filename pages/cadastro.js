@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../src/components/button/button";
 import Input from "../src/components/input/input";
 import LoginCard from "../src/components/loginCard/loginCard";
@@ -12,6 +13,10 @@ const CadastroPage = () => {
           <Input type="email" placeholder="Seu e-mail" />
           <Input type="password" placeholder="Sua senha" />
           <Button>Cadastrar</Button>
+
+          <Link href={"/login"} className={styles.link}>
+            Possui alguma conta?
+          </Link>
         </form>
       </LoginCard>
     </div>
